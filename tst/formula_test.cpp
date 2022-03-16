@@ -2,6 +2,7 @@
 #include "gmock/gmock.h"
 #include "formula.h"
 
+
 namespace testing
 {
 
