@@ -39,8 +39,8 @@ TEST(BaseTest, Test1)
 {
   GTEST_SKIP() << "Skipping single test";
   EXPECT_TRUE(IsEven(3));
-  EXPECT_THAT("This a", ::testing::StartsWith("This"));
-  EXPECT_PRED_FORMAT2(::testing::FloatLE, 1.1, 1.2);
+  // EXPECT_THAT("This a", ::testing::StartsWith("This"));
+  // EXPECT_PRED_FORMAT2(::testing::FloatLE, 1.1, 1.2);
 
   // arrange
   // act

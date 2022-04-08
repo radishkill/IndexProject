@@ -1,13 +1,17 @@
 #设置 BINARY 为项目名IndexProject
 set(BINARY ${CMAKE_PROJECT_NAME})
 
-find_package(OpenCV REQUIRED) 
+# find_package(OpenCV REQUIRED)
 
 
 set(CMAKE_INCLUDE_CURRENT_DIR TRUE)
 
+
+
+
 link_libraries(
-    ${OpenCV_LIBS}
+  pthread
+  ${OpenCV_LIBS}
 )
 
 # 1
@@ -20,3 +24,4 @@ add_executable(${BINARY}_run ${SOURCES})
 # 为了让单元测试的时候src下的代码能被作为静态链接库使用
 
 add_library(${BINARY}_lib STATIC ${SOURCES})
+
