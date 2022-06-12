@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 # project name
 project(IndexProject)
-#采用c++14标准
+# 采用c++14标准
 set(CMAKE_CXX_STANDARD 17)
 
 include(CTest)
@@ -12,6 +12,7 @@ include(CTest)
 include_directories(src)
 
 add_subdirectory(src)
+
 
 # add_subdirectory(gtest)
 # add_subdirectory(boost-test)

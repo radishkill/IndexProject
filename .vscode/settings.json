@@ -73,6 +73,21 @@
     "scoped_allocator": "cpp",
     "shared_mutex": "cpp",
     "typeindex": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "numbers": "cpp",
+    "semaphore": "cpp",
+    "stop_token": "cpp",
+    "barrier": "cpp",
+    "coroutine": "cpp",
+    "expected": "cpp",
+    "source_location": "cpp",
+    "latch": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "spanstream": "cpp",
+    "stacktrace": "cpp",
+    "syncstream": "cpp"
   }
 }
