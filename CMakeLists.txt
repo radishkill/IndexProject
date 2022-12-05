@@ -2,12 +2,14 @@
 cmake_minimum_required(VERSION 3.10)
 # project name
 project(IndexProject)
-# 采用c++14标准
+# 采用c++17标准
 set(CMAKE_CXX_STANDARD 17)
 
 include(CTest)
 # enable_testing将会自动被include(CTest)调用
 # enable_testing()
+
+option(USE_GPU "Use GPU" OFF)
 
 include_directories(src)
 

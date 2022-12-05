@@ -89,5 +89,11 @@
     "spanstream": "cpp",
     "stacktrace": "cpp",
     "syncstream": "cpp"
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.debugConfig": {
+    "args": [
+      "--gpu=false"
+    ]
   }
 }
