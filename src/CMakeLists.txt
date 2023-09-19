@@ -23,12 +23,8 @@ link_libraries(
   glog
 )
 
-# 1
-# add_executable(ExampleProject main.cpp file1.cpp file1.h)
-
-# 2
 file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
-set(SOURCES ${SOURCES})
+# set(SOURCES ${SOURCES})
 add_executable(${BINARY}_run ${SOURCES})
 set_property(TARGET ${BINARY}_run PROPERTY RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 
