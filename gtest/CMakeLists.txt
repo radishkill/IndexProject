@@ -22,4 +22,5 @@ add_executable(${BINARY} ${SOURCES})
 
 add_test(NAME ${BINARY} COMMAND ${BINARY})
 # 链接src生成的lib库和gtest库
-target_link_libraries(${BINARY} PUBLIC gtest_main gtest gmock ${CMAKE_PROJECT_NAME}_lib )
+target_link_libraries(${BINARY} gtest_main gtest gmock)
+target_link_libraries(${BINARY} ${CMAKE_PROJECT_NAME}_lib)

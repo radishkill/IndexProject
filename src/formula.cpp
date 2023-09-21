@@ -8,12 +8,10 @@ int pTestT(void *, void*) {
   return 10;
 }
 
-    int Formula::bla(int arg1)
+int Formula::bla(int arg1)
 {
   return arg1 * 2;
 }
-
-
 
 bool Formula::Foo() {
   int *p = nullptr;

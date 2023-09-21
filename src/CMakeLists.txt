@@ -13,8 +13,6 @@ if(${USE_GPU})
 add_compile_definitions(USE_GPU)
 endif(${USE_GPU})
 
-
-
 link_libraries(
   pthread
   ${OpenCV_LIBS}
@@ -28,5 +26,7 @@ file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
 add_executable(${BINARY}_run ${SOURCES})
 set_property(TARGET ${BINARY}_run PROPERTY RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 
-# 为了让单元测试的时候src下的代码能被作为静态链接库使用
-add_library(${BINARY}_lib STATIC ${SOURCES})
+if (${BUILD_TEST})
+  # 为了让单元测试的时候src下的代码能被作为静态链接库使用
+  add_library(${BINARY}_lib STATIC ${SOURCES})
+endif()
